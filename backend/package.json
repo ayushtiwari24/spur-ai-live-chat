@@ -1,14 +1,22 @@
 {
-  "name": "backend",
+  "name": "spur-ai-live-chat-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Backend for Spur AI Live Chat take-home assignment",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "spur",
+    "ai",
+    "chat",
+    "llm",
+    "customer-support"
+  ],
+  "author": "Ayush Tiwari",
+  "license": "MIT",
   "dependencies": {
     "@prisma/client": "^5.22.0",
     "cors": "^2.8.5",
