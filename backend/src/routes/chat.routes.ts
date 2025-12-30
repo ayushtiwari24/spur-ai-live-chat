@@ -1,9 +1,9 @@
-import { Router } from "express";
+import { Router, Request, Response } from "express";
 import { handleChatMessage, getChatHistory } from "../services/chat.service";
 
 const router = Router();
 
-router.post("/message", async (req, res) => {
+router.post("/message", async (req: Request, res: Response) => {
   try {
     const { message, sessionId } = req.body;
 
@@ -25,7 +25,7 @@ router.post("/message", async (req, res) => {
   }
 });
 
-router.get("/history", async (req, res) => {
+router.get("/history", async (req: Request, res: Response) => {
   try {
     const sessionId = req.query.sessionId as string;
 
