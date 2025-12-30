@@ -1,0 +1,125 @@
+/* Overall layout */
+.chat-wrapper {
+  max-width: 420px;
+  margin: 40px auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Header */
+.chat-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.chat-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.chat-status {
+  font-size: 12px;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chat-status-dot {
+  width: 8px;
+  height: 8px;
+  background: #16a34a;
+  border-radius: 50%;
+}
+
+/* Quick info chips */
+.quick-info {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.quick-chip {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.quick-chip:hover {
+  background: #f3f4f6;
+}
+
+/* Chat box */
+.chat-box {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 12px;
+  height: 420px;
+  overflow-y: auto;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  margin-bottom: 12px;
+}
+
+/* Message bubbles */
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.message.user {
+  background: #4f46e5;
+  color: white;
+  margin-left: auto;
+  border-radius: 14px 14px 4px 14px;
+}
+
+.message.ai {
+  background: #e5e7eb;
+  color: #111827;
+  margin-right: auto;
+  border-radius: 14px 14px 14px 4px;
+}
+
+/* Input area */
+.chat-input {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.chat-input button {
+  padding: 0 16px;
+  border-radius: 10px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-input button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Reset link */
+.reset-link {
+  font-size: 12px;
+  color: #6b7280;
+  cursor: pointer;
+  margin-bottom: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+}
